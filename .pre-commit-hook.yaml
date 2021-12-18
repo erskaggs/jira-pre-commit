@@ -1,0 +1,7 @@
+- id: jira-pre-commit
+  name: Jira Ticket Key
+  entry: jira-pre-commit.sh
+  language: script
+  description: Checks commit message for Jira ticket number/key
+  always_run: true
+  stages: [commit-msg]
