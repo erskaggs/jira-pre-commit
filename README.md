@@ -30,49 +30,21 @@ Install the `pre-commit` script:
 pre-commit install --hook-type commit-msg
 ```
 
-Make a (normal) commit :x::
+Make a (normal) commit without a jira ticket:
 
 ```console
 $ git commit -m "add a new feature"
-
-[INFO] Initializing environment for ....
-Conventional Commit......................................................Failed
-- hook id: conventional-pre-commit
-- duration: 0.07s
+Jira Ticket Key..........................................................Failed
+- hook id: jira-pre-commit
 - exit code: 1
 
-[Commit message] add a new feature
+Aborting commit. Your commit message is missing either a JIRA Issue, i.e. JIRA-1234.
 
-Your commit message does not follow Conventional Commits formatting
-https://www.conventionalcommits.org/
-
-Conventional Commits start with one of the below types, followed by a colon,
-followed by the commit message:
-
-    build chore ci docs feat fix perf refactor revert style test
-
-Example commit message adding a feature:
-
-    feat: implement new API
-
-Example commit message fixing an issue:
-
-    fix: remove infinite loop
-
-Optionally, include a scope in parentheses after the type for more context:
-
-    fix(account): remove infinite loop
 ```
 
-Make a (conventional) commit :heavy_check_mark::
-
+Make a commit with a jira ticket
 ```console
-$ git commit -m "feat: add a new feature"
-
-[INFO] Initializing environment for ....
-Conventional Commit......................................................Passed
-- hook id: conventional-pre-commit
-- duration: 0.05s
+Jira Ticket Key..........................................................Passed
 ```
 
 ## Versioning
