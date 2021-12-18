@@ -17,13 +17,11 @@ Add a new repo entry to your configuration file:
 
 ```yaml
 repos:
-
-# - repo: ...
-
   - repo: https://github.com/erskaggs/jira-pre-commit
     rev: <git sha or tag>
     hooks:
       - id: jira-pre-commit
+        stages: [commit-msg]
 ```
 
 Install the `pre-commit` script:
