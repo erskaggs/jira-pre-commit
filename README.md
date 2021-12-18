@@ -44,6 +44,7 @@ Aborting commit. Your commit message is missing either a JIRA Issue, i.e. JIRA-1
 
 Make a commit with a jira ticket
 ```console
+$ git commit -m "JIRA-1234 add a new feature"
 Jira Ticket Key..........................................................Passed
 ```
 
