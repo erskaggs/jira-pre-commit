@@ -18,7 +18,7 @@ Add a new repo entry to your configuration file:
 ```yaml
 repos:
   - repo: https://github.com/erskaggs/jira-pre-commit
-    rev: <git sha or tag>
+    rev: v1.0.4
     hooks:
       - id: jira-pre-commit
         stages: [commit-msg]
